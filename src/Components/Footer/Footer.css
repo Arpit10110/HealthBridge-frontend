@@ -1,0 +1,74 @@
+.Footer-Main{
+    background-color: #006065;
+    padding-top: 2rem;
+    height: 25vh;
+    padding-bottom: 1rem;
+    display: flex;
+    color: #ffffffed;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 6rem;
+}
+.developer{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.developer h4{
+    font-weight: 100;
+    font-family: NeueMontreal, Roboto, sans-serif;
+}
+.developer h4 a{
+    font-family: NeueMontreal, Roboto, sans-serif;
+    font-weight: 100;
+    color: #ffffffed;
+}
+.Footer-Main h2{
+    font-size: 1.5rem;
+    font-family: NeueMontreal, Roboto, sans-serif;
+    font-weight: 100;
+    color: #ffffffed;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: baseline;
+    font-size: 1.6rem;
+}
+.media {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.media .Icon{
+    font-size: 2.5rem;
+}
+.media a{
+    color: #ffffffed;
+    font-family: NeueMontreal, Roboto, sans-serif;
+    font-weight: 100;
+}
+@media only screen and (width<= 600px){
+    .Footer-Main {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0rem;
+        gap: 3rem;
+        height: auto;
+        padding-right: 0rem;
+    }
+    .developer {
+        gap: 0.8rem;
+    }
+    .social {
+        gap: 1rem;
+    }
+}
