@@ -1,57 +1,95 @@
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 5rem;
-    height: 10vh;
-    padding-left: 3rem;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5rem;
+  height: 10vh;
+  padding-left: 3rem;
+  align-items: center;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 1.5rem;
 }
-.logo img{
-    width: 100%;
+.logo img {
+  width: 100%;
 }
-.logo h2{
-    color: #6EAB36;
+.logo h2 {
+  color: #6eab36;
 }
-.logo h2 span{
-    color: #007E85;
+.logo h2 span {
+  color: #007e85;
 }
-.nav-links{
-    display: flex;
-    gap: 3rem;
-    font-size: 1.5rem;
-    align-items: center;
-} 
-.nav-links a{
-    color: black;
+.nav-links {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.5rem;
+  align-items: center;
 }
-.nav-links a:hover{
-    scale: 1.07;
+.nav-links a {
+  color: black;
 }
-.nav-links a .Cart-Icon{
-    font-size: 2.3rem;
-    color: #000000c7;
+.nav-links a:hover {
+  scale: 1.07;
 }
-.nav-links :nth-child(6)
-{
-    padding: 0.7rem;
-    color: white;
-    background-color: #007e85;
-    border-radius: 1rem;
+.nav-links a .Cart-Icon {
+  font-size: 2.3rem;
+  color: #000000c7;
+}
+.all-links a .Cart-Icon {
+  font-size: 2.3rem;
+}
+.nav-links :nth-child(6) {
+  padding: 0.7rem;
+  color: white;
+  background-color: #007e85;
+  border-radius: 1rem;
 }
 
-@media only screen and (width<=600px)  {
-    nav{
-        padding-right: 0rem;
-        height: 10vh;
-        padding-left: 0rem;
-    }
-    .nav-links {
+@media only screen and (width<=600px) {
+  nav {
+    padding-right: 0rem;
+    height: 10vh;
+    padding-left: 0rem;
+  }
+  .nav-links {
     display: none;
-    }
+  }
+  .mobile-links {
+    display: flex;
+  }
+  .mobile-links button {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-links button .MenuIcon {
+    color: #007e85;
+    font-size: 4rem;
+  }
+  .all-links {
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    gap: 5rem;
+    font-size: 2.5rem;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: #007e85;
+  }
+  .all-links a {
+    color: white;
+    font-size: 2.2rem;
+  }
+  .all-links :nth-child(6) {
+    padding: 0.7rem;
+    color: white;
+    background-color: #69ad2a;
+    border-radius: 1rem;
+  }
+  .all-links a .Cart-Icon {
+    font-size: 2.8rem;
+  }
 }
