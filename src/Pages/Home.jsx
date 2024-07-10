@@ -4,6 +4,7 @@ import Section1 from "../Components/Section1/Section1.jsx"
 import Service from "../Components/Service/Service.jsx"
 import Footer from "../Components/Footer/Footer.jsx"
 const Home = () => {
+  console.log(import.meta.env.VITE_Port);
   return (
    <>
    <Navbar/>
