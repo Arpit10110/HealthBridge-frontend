@@ -31,8 +31,11 @@ nav{
     color: black;
 }
 .nav-links a:hover{
-    color: #007E85;
-    text-decoration: underline;
+    scale: 1.07;
+}
+.nav-links a .Cart-Icon{
+    font-size: 2.3rem;
+    color: #000000c7;
 }
 .nav-links :nth-child(6)
 {

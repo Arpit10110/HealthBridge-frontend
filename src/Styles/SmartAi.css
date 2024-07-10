@@ -1,0 +1,67 @@
+.ai-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ai-chatbox{
+    border: 2px solid;
+    width: 40%;
+    background-color: white;
+    margin-top: 3rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.allchats{
+    height: 75vh;
+    overflow: scroll;
+}
+.user-chat {
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+}
+.user-chat h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    padding: 1.2rem;
+    border-radius: 0rem 0rem 5rem 2rem;
+    width: 85%;
+    background-color: #6EAB36;
+    color: white;
+}
+.ai-chat{
+    display: flex;
+    justify-content: start;
+    margin-top: 2rem;
+}
+.ai-chat h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    padding: 1.2rem;
+    border-radius: 0rem 0rem 3rem 2rem;
+    width: 90%;
+    background-color: #007E85;
+    color: white;
+}
+.allchats::-webkit-scrollbar {
+    width: 1px;
+}
+.input-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.input-div input {
+    width: 95%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 2px solid;
+    border-radius: 10px 10px 0px 0px;
+}
+
+@media only screen and (width<= 600px) {
+    .ai-chatbox {
+        width: 95%;
+    }
+}

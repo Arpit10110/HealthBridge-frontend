@@ -1,0 +1,49 @@
+.profile-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding-bottom: 5rem;
+}
+.profile-box {
+    border: 1px solid;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    background-color: #007E85;
+    font-size: 1rem;
+}
+.profile-box button{
+    margin: auto;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: #6EAB36;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.green-profile{
+    color: rgb(0, 255, 0);
+}
+
+.profile-box h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+@media only screen and (width<=600px) {
+    .profile-main{
+        height: 70vh;
+    }
+    .profile-box{
+        width: 70%;
+    }
+}

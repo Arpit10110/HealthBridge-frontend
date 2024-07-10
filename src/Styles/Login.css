@@ -1,0 +1,52 @@
+.Login-main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Login-main form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    background-color: #00575ce8;
+    align-items: center;
+    justify-content: center;
+}
+.Login-main form input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    border: none;
+}
+.Login-main form button{
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    background-color: #6EAB36;
+    color: white;
+}
+.extra-link h3{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 1.5rem;
+}
+.extra-link a{
+    color: #71d316;
+    text-decoration: underline;
+}
+.extra-link {
+    margin-top: 1rem;
+}
+
+@media only screen and (width<=600px) {
+    .Login-main{
+        height: 75vh;
+    }
+    .Login-main form{
+        width: 90%;
+    }
+}

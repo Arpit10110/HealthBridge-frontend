@@ -1,0 +1,35 @@
+.service-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 30%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    background-color: #0000001c;
+}
+.service-nav a{
+    color: black;
+}
+.active{
+    background-color: #007E85;
+    color: white !important;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.inactive{
+    color: black;
+    padding: 0rem;
+    border-radius: 0rem;
+}
+
+
+@media only screen and (width<=600px){
+    .service-nav {
+        width: 85%;
+    }
+}

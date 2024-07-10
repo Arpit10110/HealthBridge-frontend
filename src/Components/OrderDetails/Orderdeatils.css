@@ -1,0 +1,40 @@
+.Orderdeatils-card {
+    padding: 1rem;
+    gap: 2rem;
+    display: flex;
+    width: 45%;
+    background-color: #007E85;
+    color: white;
+    border-radius: 1rem;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.Orderdeatils-card h1{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.Orderdeatils-card h3{
+    font-weight: 400;
+}
+.Orderdeatils-card h2{
+    font-weight: 400;
+}
+.Orderdeatils-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.Orderdeatils-price {
+    display: flex;
+    justify-content: end;
+    width: 25%;
+}
+@media only screen and (width<=600px){
+    .Orderdeatils-card {
+        width: 92%;
+    }
+}

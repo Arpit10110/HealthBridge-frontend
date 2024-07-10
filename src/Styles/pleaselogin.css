@@ -1,0 +1,16 @@
+.Pleaselogin-main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.Pleaselogin-main a {
+    margin-top: 20rem;
+    padding: 1rem;
+    font-size: 3rem;
+    border-radius: 1rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: #6EAB36;
+}

@@ -1,0 +1,12 @@
+.detailmyorder-main{
+    min-height: 70vh;
+    padding-bottom: 5rem;
+}
+
+.innerdetail-myorder{
+    display: flex;
+    justify-content: space-around;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,96 @@
+.myorder-main{
+    min-height: 70vh;
+    padding-bottom: 5rem;
+}
+.loading-div{
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+    align-items: center;
+}
+.loading-div img{
+    width: 15%;
+}
+.Norders-div{
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+    align-items: center;
+}
+.Norders-div h1{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 350;
+    font-size: 3rem;
+}
+.allorders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 4rem;
+}
+.myorder-card{
+    border: 2px solid;
+    padding: 1rem;
+    gap: 1.5rem;
+    display: flex;
+    width: 80%;
+    background-color: #007E85;
+    color: white;
+    border-radius: 1rem;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.timeandstatus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.product-info{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.product-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+.product-price{
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+.myorder-card a{
+    padding: 0.8rem;
+    font-size: 1.4rem;
+    margin: auto;
+    background-color: #6EAB36;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+}
+.myorder-card:hover{
+    scale: 1.01;
+    transition: ease-in-out;
+}
+.myorder-card h2{
+    font-weight: 400;
+}
+@media only screen and (width<=600px) {
+    .myorder-card {
+        width: 92%;
+    }
+    .product-cont {
+        width: 70%;
+    }
+    .product-price {
+        width: 25%;
+    }
+}

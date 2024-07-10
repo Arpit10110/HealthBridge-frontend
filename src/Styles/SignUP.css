@@ -1,0 +1,58 @@
+.SingUP-main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SingUP-main form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    background-color: #00575ce8;
+    align-items: center;
+    justify-content: center;
+}
+.SingUP-main form input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    border: none;
+}
+.SingUP-main form button{
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #6EAB36;
+    color: white;
+}
+.extra-link h3{
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 1.5rem;
+}
+.extra-link a{
+    color: #71d316;
+    text-decoration: underline;
+}
+.address-part{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.address-part input{
+    width: 45% !important;
+}
+@media only screen and (width<=600px) {
+    .SingUP-main{
+        height: 75vh;
+    }
+    .SingUP-main form{
+        width: 90%;
+    }
+}
