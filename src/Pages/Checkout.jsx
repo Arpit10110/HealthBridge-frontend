@@ -51,7 +51,7 @@ const Checkout = () => {
                 },
                 OrderDate:formattedDate
             }
-            const {data}=await axios.post("http://localhost:5000/placedorder",UserOrder)
+            const {data}=await axios.post(`${import.meta.env.VITE_Port}/placedorder`,UserOrder)
             if(data.success == true){
                 dispatch({
                     type:"emptycart"
