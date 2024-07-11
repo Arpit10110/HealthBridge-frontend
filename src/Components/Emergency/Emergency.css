@@ -1,0 +1,42 @@
+.emergency-main {
+    display: flex;
+    justify-content: center;
+}
+.emergency-box{
+    width: 40%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #007e85;
+    border-radius: 15px;
+    gap: 1rem;
+    border: none;
+    margin-top: 6rem;
+}
+.emergency-box input{
+    padding: 0.6rem;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.3rem;
+    border: none;
+}
+.emergency-box input:nth-child(4) {
+    height: 15vh;
+    text-align: center;
+}
+.emergency-box button{
+    padding: 0.6rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: #6eab36;
+    border: none;
+}
+@media only screen and (width<=600px) {
+  .emergency-box{
+    width: 90%;
+  }
+}

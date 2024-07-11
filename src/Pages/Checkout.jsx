@@ -5,9 +5,11 @@ import {useSelector,useDispatch} from "react-redux"
 import axios from 'axios'
 import Footer from "../Components/Footer/Footer.jsx"
 import "../Styles/Checkout.css"
+import load from "../assets/load.gif"
 const Checkout = () => {
     const Navigate = useNavigate()
     const dispatch=useDispatch()
+    const [Loading,SetLoading] = useState(true);
     const { cart } = useSelector((state) => state.healtbrdigedeatil);
     const { Subtotal } = useSelector((state) => state.healtbrdigedeatil);
     const { Tax } = useSelector((state) => state.healtbrdigedeatil);
@@ -23,6 +25,7 @@ const Checkout = () => {
             })
             const x=data.userdetails
             SetUserdeatils(x); 
+            SetLoading(false)
         } catch (error) {
             console.log(error)
         }
@@ -78,6 +81,10 @@ const Checkout = () => {
   return (
    <>
    <Navbar/>
+   {
+         Loading==true? <div className="Profileloading-div">
+         <img src={load} alt="Loading" />
+       </div>:
    <div className="checkout-main">
     <div className="userdetails">
         <h2>!!!!User Details!!!!</h2>
@@ -97,6 +104,7 @@ const Checkout = () => {
         <button>Pay Online</button>
     </div>
    </div>
+}
    <Footer/>
    </>
   )

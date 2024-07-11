@@ -16,3 +16,13 @@
     border-radius: 1rem;
     font-size: 2rem;
 }
+
+@media only screen and (width<=600px){
+    .placedorder-main {
+        gap: 1rem;
+        padding-bottom: 10rem;
+    }
+    .placedorder-main img {
+        width: 90%;
+    }
+}

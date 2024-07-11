@@ -8,9 +8,6 @@ const deleteItem=createAction('deleteItem')
 const emptycart=createAction('emptycart')
 const localstore=createAction('localstore')
 export  const healthbridgereducer=createReducer({
-   UserName:localStorage.getItem("HealthUserName")? localStorage.getItem("HealthUserName") :"",
-   UserPhone:localStorage.getItem("HealthPhone")? localStorage.getItem("HealthPhone") :"",
-   UserEmail:localStorage.getItem("HealthEmail")? localStorage.getItem("HealthEmail") :"",
    User_id:localStorage.getItem("HealthID")? localStorage.getItem("HealthID") :"",
    cart:localStorage.getItem("Healthcart")? JSON.parse(localStorage.getItem("Healthcart")) : [],
    Subtotal:localStorage.getItem("HealthSubtotal")? localStorage.getItem("HealthSubtotal"):0,
@@ -21,24 +18,11 @@ export  const healthbridgereducer=createReducer({
 (builder)=>{
     builder.addCase(Profile,(state,action)=>{
       const value=action.payload; 
-      console.log(value)
-      state.UserName=value.name;
-      state.UserEmail=value.email;
-      state.UserPhone=value.phone;
       state.User_id=value._id;
-      localStorage.setItem("HealthUserName",state.UserName);
-      localStorage.setItem("HealthEmail",state.UserEmail);
-      localStorage.setItem("HealthPhone",state.UserPhone);
       localStorage.setItem("HealthID",state.User_id);
     })
     builder.addCase(logout,(state)=>{
-      state.UserName="";
-      state.UserEmail="";
-      state.UserPhone="";
       state.User_id="";
-      localStorage.setItem("HealthUserName",state.UserName);
-      localStorage.setItem("HealthEmail",state.UserEmail);
-      localStorage.setItem("HealthPhone",state.UserPhone);
       localStorage.setItem("HealthID",state.User_id);
     })
     builder.addCase(addtocart,(state,action)=>{

@@ -5,9 +5,11 @@ import Navbar from '../Components/Navbar/Navbar';
 import "../Styles/Profile.css"
 import {useNavigate} from "react-router-dom"
 import Footer from '../Components/Footer/Footer';
+import load from "../assets/load.gif"
 const Profile = () => {
     const Navigate = useNavigate()
     const dispatch=useDispatch()
+    const [Loading,SetLoading] = useState(true);
     const { User_id } = useSelector(state => state.healtbrdigedeatil);
     const [Userdeatils,SetUserdeatils]=useState([])
     const getprofile =async()=>{
@@ -17,7 +19,7 @@ const Profile = () => {
             })
             const x=data.userdetails
             SetUserdeatils(x);
-            console.log(data)
+            SetLoading(false)
         } catch (error) {
             console.log(error)
         }
@@ -37,6 +39,10 @@ const Profile = () => {
   return (
    <>
     <Navbar/>
+    {
+         Loading==true? <div className="Profileloading-div">
+         <img src={load} alt="Loading" />
+       </div>:
     <div className="profile-main">
         <div className="profile-box">
             <h1><span className='green-profile'>Name-</span>{Userdeatils.name}</h1>
@@ -46,6 +52,7 @@ const Profile = () => {
             <button onClick={logout} >Logout</button>
         </div>
     </div>
+    }
     <Footer/>
    </>
   )
