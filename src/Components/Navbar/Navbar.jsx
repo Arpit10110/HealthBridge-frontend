@@ -31,7 +31,7 @@ const Navbar = () => {
         <Link to="/smartai">Smart AI</Link>
         {User_id == "" ? <Link to="/signup">SignUp</Link> : ""}
         {User_id == "" ? (
-          <Link to="/login">LogIn</Link>
+          <Link to="/userlogin">LogIn</Link>
         ) : (
           <Link to="/profile">Profile</Link>
         )}
@@ -62,7 +62,7 @@ const Navbar = () => {
         <Link to="/smartai">Smart AI</Link>
         {User_id == "" ? <Link to="/signup">SignUp</Link> : ""}
         {User_id == "" ? (
-          <Link to="/login">LogIn</Link>
+          <Link to="/userlogin">LogIn</Link>
         ) : (
           <Link to="/profile">Profile</Link>
         )}

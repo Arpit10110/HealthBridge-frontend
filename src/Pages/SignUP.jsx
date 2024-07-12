@@ -107,7 +107,7 @@ const SignUP = () => {
           <button>SignUP</button>
           <div className="extra-link">
             <h3>
-              Already have account!! <Link to="/login">Login</Link>
+              Already have account!! <Link to="/userlogin">Login</Link>
             </h3>
           </div>
         </form>

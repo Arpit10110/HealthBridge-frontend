@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios"
 import {useDispatch} from "react-redux"
-const Login = () => {
+const UserLogin = () => {
     const naviagte= useNavigate()
     const dispatch=useDispatch()
     const [Email,SetEmail]=useState("")
@@ -82,4 +82,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default UserLogin

@@ -3,7 +3,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 //Pages
 import Home from "./Pages/Home.jsx"
 import SignUP from "./Pages/SignUP.jsx"
-import Login from "./Pages/Login.jsx"
+import UserLogin from "./Pages/UserLogin.jsx"
 import Profile from "./Pages/Profile.jsx"
 import SmartAi from "./Pages/SmartAi.jsx"
 import Service from "./Pages/Service.jsx"
@@ -25,7 +25,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/signup" element={<SignUP/>}/>
-      <Route path="/login" element={<Login/>}/>
+      <Route path="/userlogin" element={<UserLogin/>}/>
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/smartai" element={<SmartAi/>}/>
       <Route path="/cart" element={<Cart/>}/>
