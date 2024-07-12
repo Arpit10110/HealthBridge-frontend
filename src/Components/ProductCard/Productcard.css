@@ -42,4 +42,7 @@
     .card-main {
         width: 80%;
     }
+    .card-main h1 {
+        font-size: 2rem;
+    }
 }

@@ -20,3 +20,9 @@ body{
         font-size: 60%;
     }
 }
+
+@media only screen and (width<= 355px ) {
+    html{
+        font-size: 52%;
+    }
+}
