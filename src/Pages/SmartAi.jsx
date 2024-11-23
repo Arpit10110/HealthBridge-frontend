@@ -4,7 +4,7 @@ import "../Styles/SmartAi.css";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const SmartAi = () => {
-  const Api_Key = "AIzaSyAeX2pIQaKomgauZxBqYVpnV8Mk5HNDTgg";
+  const Api_Key = "AIzaSyDcqxdqDPTmeIfi6T4er3dkQUsOZsIM0uU";
   const genAI = new GoogleGenerativeAI(Api_Key);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
